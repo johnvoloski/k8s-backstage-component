@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-backstage-component
+  labels:
+    backstage.io/kubernetes-id: k8s-backstage-component
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: k8s-backstage-component
+  template:
+    metadata:
+      labels:
+        app: k8s-backstage-component
+        backstage.io/kubernetes-id: k8s-backstage-component
+    spec:
+      containers:
+      - name: ubuntu
+        image: ubuntu
+        command: 
+        - /bin/sh
+        args:
+        - -c
+        - "tail -f /dev/null"
