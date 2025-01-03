@@ -4,6 +4,7 @@ metadata:
   name: k8s-backstage-component
   labels:
     backstage.io/kubernetes-id: k8s-backstage-component
+  namespace: backstage
 spec:
   replicas: 3
   selector:
