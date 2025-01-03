@@ -4,6 +4,7 @@ metadata:
   name: k8s-backstage-component
   annotations:
     github.com/project-slug: johnvoloski/k8s-backstage-component
+    sonarqube.org/project-key: teste/teste
 spec:
   type: other
   lifecycle: production
